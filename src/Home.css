@@ -1,0 +1,31 @@
+body{
+    background-color: #282c34;
+}
+.cymulate-nav{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Add this line for drop shadow */
+    border-radius: 2px;
+}
+.cymate-nav-icon{
+    display: flex;
+    align-items: center;
+}
+.cymate-nav-icon-logo-image{
+    width: 4vw;
+    height:8vh;
+    padding:8px 8px;
+}
+.cymate-nav-icon-logo-text{
+    position: relative;
+    right: 14px;
+}
+.cymate-nav-right-lists{
+    display: flex;
+    padding-right: 20px;
+    gap: 14px;
+    list-style: none;
+    font-weight:600;
+    font-size: x-large;
+}
