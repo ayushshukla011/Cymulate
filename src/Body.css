@@ -1,0 +1,245 @@
+:root {
+    --circle1-border-color: black;
+    --circle2-border-color: rgb(31, 155, 31);
+    --circle3-border-color: rgb(31, 155, 31);
+    --circle4-border-color: rgb(249, 97, 123);
+    --circle5-border-color: rgb(249, 97, 123);
+    --circle6-border-color: yellow;
+    --circle7-border-color: yellow;
+    --circle8-border-color: rgb(140, 20, 140);
+  }
+
+.cymate-body{
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    overflow-y: hidden;
+}
+.cymate-body-right button {
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 2px 16px;
+    color: #fff;
+    width: 200px;
+    font-size: 1.2em;
+    font-weight: 300;
+    background-color: #282c34;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .cymate-body-right button:hover {
+    background-color: rgb(0, 162, 255);
+  }
+  .cymate-body-right button:active {
+    background-color: rgb(0, 162, 255); /* Change to the color on click */
+  }
+  
+/* SolarSystem.css */
+
+.solar-system-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 100vh;
+    z-index: -1;
+    /* overflow-y: hidden;
+    overflow-x: hidden; */
+  }
+  
+  .solar-system-background .orbit {
+    position: absolute;
+    top: 70%;
+    left: 2%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border-style: dotted;
+    border-width: 1px;
+    color: white;
+  }
+  
+  .orbit1 {
+    width: 200px; 
+    height: 200px; 
+    box-shadow: inset 0 0 30px 5px rgba(0, 0, 0, 1);
+  }
+  
+   .orbit2 {
+    width: 230px; 
+    height: 230px; 
+  }
+ 
+  .orbit3 {
+    width: 350px; 
+    height: 350px; 
+    
+  }
+  
+  .orbit4 {
+    width: 500px; 
+    height: 500px; 
+    box-shadow: inset 0 0 50px 5px rgba(0, 0, 0, 1);
+  }
+   
+  .orbit5 {
+    width: 650px; 
+    height: 650px; 
+  }
+  
+  .orbit6 {
+    width: 800px; 
+    height: 800px; 
+    box-shadow: inset 0 0 60px 5px rgba(0, 0, 0, 1);
+  }
+  
+  .orbit7 {
+    width: 950px; 
+    height: 950px; 
+  }
+  .orbit8 {
+    width: 1100px;
+    height: 1100px;
+    box-shadow: inset 0 0 70px 5px rgba(0, 0, 0, 1);
+  }
+  .overlaid-circle1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    background-color: #282c34;
+    top: 70%;
+    right:600px;
+    transform: translate(-50%, -50%);
+    width: 80px; /* Adjust size as needed */
+    height: 80px; /* Adjust size as needed */
+    border-radius: 50%;
+    border: 2px solid var(--circle1-border-color); /* Border color */
+    z-index: 2;
+    --circle-border-color: var(--circle1-border-color); 
+  }
+  .overlaid-circle2 {
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #282c34;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    border-radius: 50%;
+    border: 2px solid var(--circle2-border-color); /* Adjust styles as needed */
+    z-index: 2; 
+    --circle-border-color: var(--circle2-border-color); /* Set the circle border color */
+  animation: pulse 2s infinite;
+  }
+  .overlaid-circle3 {
+    position: absolute;
+    background-color: #282c34;
+    top: 80%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    border-radius: 50%;
+    border: 2px solid var(--circle3-border-color); /* Adjust styles as needed */
+    z-index: 2; /* Ensure the overlay appears above orbits */
+    --circle-border-color: var(--circle3-border-color); /* Set the circle border color */
+    animation: pulse 2s infinite;
+  }
+  .overlaid-circle4 {
+    position: absolute;
+    background-color: #282c34;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    border-radius: 50%;
+    border: 2px solid var(--circle4-border-color);
+    --circle-border-color: var(--circle4-border-color); /* Set the circle border color */
+    animation: pulse 2s infinite; /* Adjust styles as needed */
+    z-index: 2; /* Ensure the overlay appears above orbits */
+  }
+  .overlaid-circle5 {
+    position: absolute;
+    background-color: #282c34;
+    top: 85%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    border-radius: 50%;
+    border: 2px solid var(--circle5-border-color); /* Adjust styles as needed */
+    z-index: 2; 
+    --circle-border-color: var(--circle4-border-color); /* Set the circle border color */
+    animation: pulse 2s infinite; 
+  }
+  .overlaid-circle6 {
+    position: absolute;
+    background-color: #282c34;
+    top: 90%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    border-radius: 50%;
+    border: 2px solid var(--circle6-border-color); /* Adjust styles as needed */
+    z-index: 2; 
+    --circle-border-color: var(--circle6-border-color); /* Set the circle border color */
+    animation: pulse 2s infinite; 
+  }
+  .overlaid-circle7 {
+    position: absolute;
+    background-color: #282c34;
+    top: 40%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    border-radius: 50%;
+    border: 2px solid var(--circle7-border-color); /* Adjust styles as needed */
+    z-index: 2;
+    --circle-border-color: var(--circle7-border-color); /* Set the circle border color */
+    animation: pulse 2s infinite ease-out;  /* Ensure the overlay appears above orbits */
+  }
+  .overlaid-circle8 {
+    position: absolute;
+    background-color: #282c34;
+    top: 65%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    border-radius: 50%;
+    border: 2px solid var(--circle8-border-color); /* Adjust styles as needed */
+    z-index: 2; 
+    --circle-border-color: var(--circle8-border-color); /* Set the circle border color */
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0% {
+      box-shadow: 0px 0px 10px 2px var(--circle-border-color, black);
+    }
+    50% {
+      box-shadow: 0px 0px 20px 6px var(--circle-border-color, black);
+    }
+    100% {
+      box-shadow: 0px 0px 10px 2px rgba(0, 0, 255, 0); /* Default shadow color */
+    }
+  }
+  .circle2-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+ 

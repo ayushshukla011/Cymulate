@@ -1,0 +1,25 @@
+/* Sidebox.css */
+
+.cymate-body-right-menu {
+    padding: 10px;
+    background-color: #282c34;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    overflow-y: scroll;
+  }
+  
+  .data-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #282c34;
+    /* border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); */
+  }
+  
+  
+  .data-item p {
+    margin-bottom: 4px;
+    color: #666;
+  }
+  
