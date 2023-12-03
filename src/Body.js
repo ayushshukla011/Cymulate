@@ -77,6 +77,7 @@ const Body = () => {
       
       {/* Rest of your component */}
       <div className='cymate-body-sidebar' onClick={toggleLeftMenu}>
+       {/* <span className='dashboard-heading'>Dashboard</span>  */}
         <Sidebar/>
         </div>
       <div className='cymate-body-main'></div>

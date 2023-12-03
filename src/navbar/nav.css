@@ -33,7 +33,7 @@
 }
 .cymulate-demo-text{
     position: relative;
-    right: 20%;
+    right: 25px;
     font-weight: lighter;
     font-size: x-large;
     color: rgb(0, 98, 255);
@@ -45,4 +45,77 @@
 .cymulate-demo{
     position: relative;
     bottom: 5px;
+  
 }
+
+@media screen and (max-width: 768px) {
+    /* Hamburger menu styles */
+    .menu-open{
+        display: flex;
+        flex-direction: column;
+    }
+    .hamburger-menu {
+      display: block;
+      cursor: pointer;
+      padding: 10px;
+    }
+    .cymate-nav-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px; /* Add margin for spacing */
+      }
+    
+      .cymate-nav-icon-logo-image {
+        width: 50%; /* Adjust as needed */
+        max-width: 100px; /* Set a maximum width */
+        height: auto;
+        padding: 8px; /* Add padding */
+      }
+    
+      .cymate-nav-icon-logo-text {
+      display: none;
+      }
+    
+      .cymulate-demo-text {
+        position: static; /* Update position */
+        margin-top: 10px; /* Add margin */
+        text-align: center; /* Center align */
+        font-size: 1rem; /* Adjust font size */
+        color: rgb(0, 98, 255);
+      }
+    
+    .line {
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      margin: 5px 0;
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .menu-open .line:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+  
+    .menu-open .line:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .menu-open .line:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  
+    /* Hide the menu items initially */
+    .cymate-nav-right-lists {
+      display: none;
+      /* other existing styles */
+    }
+  
+    /* Display the menu items when menu is open */
+    .menu-open .cymate-nav-right-lists {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+  }

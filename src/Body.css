@@ -72,6 +72,7 @@
    .orbit2 {
     width: 230px; 
     height: 230px; 
+    box-shadow:  4px 0px 10px 1px rgba(31, 155, 31, 0.7)
   }
  
   .orbit3 {
@@ -83,7 +84,7 @@
   .orbit4 {
     width: 500px; 
     height: 500px; 
-    box-shadow: inset 0 0 50px 5px rgba(0, 0, 0, 1);
+    box-shadow: inset 0 0 50px 5px rgba(0, 0, 0, 1),  2px 0px 10px 0px rgba(0, 162, 255, 0.7);
   }
    
   .orbit5 {
