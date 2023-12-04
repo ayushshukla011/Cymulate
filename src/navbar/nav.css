@@ -1,14 +1,15 @@
 
 .cymulate-nav{
-    background-color: #282c34;
+    background-color: #221f28;
     display: flex;
     color: white;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Add this line for drop shadow */
+    box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.5); 
     border-radius: 2px;
     position: relative;
     height: fit-content;
+    z-index: 8555555;
 }
 .cymate-nav-icon{
     display: flex;
@@ -37,6 +38,7 @@
     font-weight: lighter;
     font-size: x-large;
     color: rgb(0, 98, 255);
+    cursor: pointer;
 }
 .cymulate-demo-text-globe{
     margin-right: 2px;
@@ -49,7 +51,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    /* Hamburger menu styles */
+ 
     .menu-open{
         display: flex;
         flex-direction: column;
@@ -63,14 +65,14 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 10px; /* Add margin for spacing */
+        margin-bottom: 10px; 
       }
     
       .cymate-nav-icon-logo-image {
-        width: 50%; /* Adjust as needed */
-        max-width: 100px; /* Set a maximum width */
+        width: 50%; 
+        max-width: 100px; 
         height: auto;
-        padding: 8px; /* Add padding */
+        padding: 8px;
       }
     
       .cymate-nav-icon-logo-text {
@@ -78,10 +80,10 @@
       }
     
       .cymulate-demo-text {
-        position: static; /* Update position */
-        margin-top: 10px; /* Add margin */
-        text-align: center; /* Center align */
-        font-size: 1rem; /* Adjust font size */
+        position: static;
+        margin-top: 10px; 
+        text-align: center; 
+        font-size: 1rem; 
         color: rgb(0, 98, 255);
       }
     
@@ -105,17 +107,29 @@
       transform: rotate(45deg) translate(-5px, -6px);
     }
   
-    /* Hide the menu items initially */
     .cymate-nav-right-lists {
       display: none;
-      /* other existing styles */
+   
     }
   
-    /* Display the menu items when menu is open */
     .menu-open .cymate-nav-right-lists {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
     
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  
+    .cymate-nav-icon-logo-text {
+      font-size: 0.9rem; 
+    }
+  
+    .cymulate-demo-text {
+      font-size: 1rem; 
+    }
+  
+    .cymate-nav-right-lists {
+      font-size: 1rem; 
+    }
   }

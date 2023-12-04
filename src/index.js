@@ -4,15 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Nav from './navbar/nav';
-import Body from './Body';
+
 import Page2 from './pages/Page2';
+import Page1 from './pages/page1/page1';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Nav/>
-    <Body/>
-    <Page2/>
+   
     
   </React.StrictMode>
 );

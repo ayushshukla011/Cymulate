@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import "./nav.css";
 import logo from "../assets/logo.png";
-import Body from '../Body';
 import { FaCloudArrowDown } from "react-icons/fa6";
 import { FaDownload,FaRegBell,FaCaretRight } from "react-icons/fa";
 import { RiArrowDropDownLine } from "react-icons/ri";
@@ -23,7 +22,7 @@ const Home = () => {
         </div>
         <span className='cymulate-demo-text'>
           <span className='cymulate-demo-text-globe'><CiGlobe/></span>
-          <span className='cymulate-demo'>Cymulate Demo</span>
+          <span className='cymulate-demo' onClick={()=>{alert("Not Available right now!")}}>Cymulate Demo</span>
           <FaCaretRight/>
         </span>
         <div className='hamburger-menu' onClick={toggleMenu}>
@@ -40,7 +39,7 @@ const Home = () => {
         </ul>
       </nav>
       <div>
-        {/* Other content */}
+      
       </div>
     </div>
   );
