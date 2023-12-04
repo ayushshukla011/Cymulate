@@ -1,5 +1,5 @@
 import React from 'react';
-import data from '../data/data';
+import data from '../../data/data';
 import '../components/Sidebox.css'; // Import CSS file for styling
 import { MdDataExploration } from "react-icons/md";
 

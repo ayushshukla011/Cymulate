@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import './Body.css';
-import Sidebox from './components/Sidebox';
-import Sidebar from './components/Sidebar';
+import Sidebox from '../../components/Page1components/Sidebox';
+import Sidebar from '../../components/Page1components/Sidebar';
 import {FaRegBell} from "react-icons/fa";
 import { MdMoveUp, MdOutlinePhishing } from 'react-icons/md';
 import { FaFilterCircleDollar } from 'react-icons/fa6';
 import { SiAmazonsimpleemailservice, SiSecurityscorecard, SiWebmoney } from 'react-icons/si';
 import { IoSpeedometerOutline } from 'react-icons/io5';
-const Body = () => {
+const Page1 = () => {
   const [showSidebox, setShowSidebox] = useState(true);
   const [showLeftBox, setShowLeftBox] = useState(true);
   const circleColors = [
@@ -181,4 +181,4 @@ const Body = () => {
   );
 };
 
-export default Body;
+export default Page1;
