@@ -5,7 +5,7 @@ import Section3 from "../components/Page2components/Section3";
 
 export default function Page2() {
   return (
-    <section className="min-h-screen p-8 bg-primaryBg font-bold text-white flex flex-col gap-4">
+    <section className="min-h-screen md:p-8 p-4 bg-primaryBg font-bold text-white flex flex-col gap-4">
       <Section1 />
       <section className="flex gap-4">
         <button className="flex items-center gap-2 p-2">

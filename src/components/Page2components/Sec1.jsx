@@ -7,7 +7,7 @@ import graph from "./graph.png";
 export default function Section1() {
   const [isActive, setIsActive] = useState(0);
   return (
-    <section className="w-full h-1/3 flex gap-4 rounded p-4" style={{backgroundColor:"#202128"}}>
+    <section className="w-full h-1/3 flex flex-wrap sm:justify-start justify-center gap-4 rounded p-4" style={{backgroundColor:"#202128"}}>
       <div className="h-full flex flex-col items-center justify-between gap-1 rounded p-3" style={{backgroundColor:"#2b2b36"}}>
         <h1 className="w-full text-lg flex justify-center gap-2">
           Security Score
@@ -26,7 +26,7 @@ export default function Section1() {
           From last month
         </p>
       </div>
-      <div className="flex flex-col justify-between">
+      <div className="flex flex-col justify-between gap-5">
         <div className="flex flex-col text-sm">
           <h2 className="text-lg">Compare Scenarios</h2>
           <h3 className="mt-2 text-secondaryText flex items-center gap-2">
@@ -47,22 +47,22 @@ export default function Section1() {
         </div>
       </div>
       <div className="flex-grow h-full flex-col">
-        <div className="flex gap-1 text-sm">
-          <button onClick={()=>setIsActive(0)} className={`p-2 px-4 border-b-2 ${isActive===0?"border-purleBg": "border-transparent"}`}>
+        <div className="flex md:gap-1 text-sm">
+          <button onClick={()=>setIsActive(0)} className={`md:p-2 sm:p-1 md:px-4 px-2 border-b-2 ${isActive===0?"border-purleBg": "border-transparent"}`}>
             1 Week
           </button>
-          <button onClick={()=>setIsActive(1)} className={`p-2 px-4 border-b-2 ${isActive===1?"border-purleBg": "border-transparent"}`}>
+          <button onClick={()=>setIsActive(1)} className={`md:p-2 sm:p-1 md:px-4 px-2 border-b-2 ${isActive===1?"border-purleBg": "border-transparent"}`}>
             1 Months
           </button>
-          <button onClick={()=>setIsActive(2)} className={`p-2 px-4 border-b-2 ${isActive==2?"border-purleBg": "border-transparent"}`}>
+          <button onClick={()=>setIsActive(2)} className={`md:p-2 sm:p-1 md:px-4 px-2 border-b-2 ${isActive==2?"border-purleBg": "border-transparent"}`}>
             3 Months
           </button>
-          <button onClick={()=>setIsActive(3)} className={`p-2 px-4 border-b-2 ${isActive===3?"border-purleBg": "border-transparent"}`}>
+          <button onClick={()=>setIsActive(3)} className={`md:p-2 sm:p-1 md:px-4 px-2 border-b-2 ${isActive===3?"border-purleBg": "border-transparent"}`}>
             6 Months
           </button>
         </div>
-        <div>
-          <img src={graph} alt="Image" />
+        <div className="w-full h-32 overflow-x-auto">
+          <img src={graph} alt="Image" className="w-auto h-32 object-contain" />
         </div>
       </div>
     </section>
