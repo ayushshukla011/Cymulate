@@ -16,19 +16,18 @@ import { IoSpeedometerOutline } from "react-icons/io5";
 const Sidebar = () => {
   return (
     <div className="sidebar">
-        <h2 className='dashboard-heading'><IoSpeedometerOutline style={{ color: 'grey' }}/> Dashboard</h2>
       <ul>
-        <li><BsFire/>IMMEDIATE THREATS INTELLIGENCE</li>
-        <li><SiAmazonsimpleemailservice/>EMAIL GATEWAY<RiArrowDropDownLine/></li>
-        <li><SiWebmoney />WEB GATEWAY</li>
-        <li><GiWireframeGlobe />WEB APPLICATION FIREWALL</li>
-        <li><MdOutlinePhishing />PHISING AWARENESS<RiArrowDropDownLine/></li>
-        <li><SiSecurityscorecard />ENDPOINT SECURITY<RiArrowDropDownLine/></li>
-        <li><MdMoveUp />LATERAL MOVEMENT</li>
-        <li><FaFilterCircleDollar />DATA EXFILTRATION<RiArrowDropDownLine/></li>
-        <li><GiBreakingChain />FULL-KILL CHAIN APT</li>
-        <li><TfiAnnouncement />ACTIVITY CENTER</li>
-        <li><MdEventNote />REPORTS</li>
+        <li onClick={()=>{alert("Not Available right now!")}}><BsFire/>IMMEDIATE THREATS INTELLIGENCE</li>
+        <li onClick={()=>{alert("Not Available right now!")}}><SiAmazonsimpleemailservice/>EMAIL GATEWAY<RiArrowDropDownLine/></li>
+        <li onClick={()=>{alert("Not Available right now!")}}><SiWebmoney />WEB GATEWAY</li> 
+        <li onClick={()=>{alert("Not Available right now!")}}><GiWireframeGlobe />WEB APPLICATION FIREWALL</li>
+        <li onClick={()=>{alert("Not Available right now!")}}><MdOutlinePhishing />PHISING AWARENESS<RiArrowDropDownLine/></li>
+        <li onClick={()=>{alert("Not Available right now!")}}><SiSecurityscorecard />ENDPOINT SECURITY<RiArrowDropDownLine/></li>
+        <li onClick={()=>{alert("Not Available right now!")}}><MdMoveUp />LATERAL MOVEMENT</li>
+        <li onClick={()=>{alert("Not Available right now!")}}><FaFilterCircleDollar />DATA EXFILTRATION<RiArrowDropDownLine/></li>
+        <li onClick={()=>{alert("Not Available right now!")}}><GiBreakingChain />FULL-KILL CHAIN APT</li>
+        <li onClick={()=>{alert("Not Available right now!")}}><TfiAnnouncement />ACTIVITY CENTER</li>
+        <li onClick={()=>{alert("Not Available right now!")}}><MdEventNote />REPORTS</li>
       </ul>
     </div>
   );
