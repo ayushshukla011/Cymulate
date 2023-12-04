@@ -13,11 +13,9 @@ const Sidebox = () => {
             <img src={item.image} alt={`Image ${index}`} className='logo-image' />
           </div>
           <div className='data-item'>
-          <p>
-                VECTOR: <span style={{ color: 'white' }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{item.Vector}</span>
-              </p>
+          <p className='vector-p'> &nbsp;&nbsp;&nbsp;&nbsp;VECTOR: <span style={{ color: 'white' }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{item.Vector}</span> </p>
             <p>TARGET:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{item.Target}</p>
-            <p>TIME:   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{item.Time}</p>
+            <p>&nbsp;&nbsp;TIME:   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{item.Time}</p>
           </div>
           <div className='document-icon'>
             <MdDataExploration size={40} />

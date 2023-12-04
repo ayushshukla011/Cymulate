@@ -5,8 +5,9 @@
   background-color: #212028;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  overflow-y: scroll; /* Change to 'auto' to enable scrolling if the content overflows */
-  max-height: 100vh; 
+  overflow-y: auto; /* Change to 'auto' to enable scrolling if the content overflows */
+  max-height: 89vh; 
+  height: 99vh;
   z-index: 999;
 }
 
@@ -85,10 +86,17 @@
   background: linear-gradient(to right, black 0%, transparent 50%, rgb(236, 81, 213) 100%);
 }
 @media (max-width: 768px) {
+  
   .data-item p {
+    width: fit-content;
     font-size: 0.6rem;
   }
+ 
   .cymate-body-right-menu{
     max-width: 100vw;
+  }
+  .vector-p{
+   position: relative;
+   right: 10px;
   }
 }

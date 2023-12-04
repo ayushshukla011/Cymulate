@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Body.css';
 import Sidebox from './components/Sidebox';
 import Sidebar from './components/Sidebar';
@@ -20,6 +20,28 @@ const Body = () => {
     'yellow',
     'rgb(140, 20, 140)',
   ];
+  useEffect(() => {
+    // Function to handle screen size changes
+    const handleResize = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth <= 1024) {
+        setShowLeftBox(false); // Close left menu for mobile screens
+        setShowSidebox(false); // Close right menu for mobile screens
+      } else {
+        setShowLeftBox(true); // Open left menu for larger screens
+        setShowSidebox(true); // Open right menu for larger screens
+      }
+    }
+    window.addEventListener('resize', handleResize);
+
+    // Initial check on component mount
+    handleResize();
+
+    // Clean up event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   const toggleSidebox = () => {
     setShowSidebox(!showSidebox);
   };
@@ -42,13 +64,14 @@ const Body = () => {
         </div>
         <div className='orbit orbit2'></div>
         <div className='orbit orbit3'>
+        </div>
+        <div className='orbit orbit4'>
         <div className='Lowermost-texts-body'>
 <span style={{color:'green'}}>POST EXPLOITATION</span>
 <span style={{color:'#4f8bd1'}}>EXPLOITATION</span>
 <span style={{color:'#4d2754'}}>PRE EXPLOITATION</span>
 </div>
         </div>
-        <div className='orbit orbit4'></div>
         <div className='orbit orbit5'></div>
         <div className='orbit orbit6'></div>
         <div className='orbit orbit7'></div>
