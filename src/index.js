@@ -12,7 +12,7 @@ root.render(
   <React.StrictMode>
     <Nav/>
     <Body/>
-    {/* <Page2/> */}
+    <Page2/>
     
   </React.StrictMode>
 );

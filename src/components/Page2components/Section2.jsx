@@ -2,6 +2,9 @@ import { BsHexagonFill } from "react-icons/bs";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 export default function Section2() {
+  const grad={
+    backgroundImage:"conic-gradient(#c0183d 120deg,#f37626 120deg,#f37626 240deg,#82a54f 120deg)"
+  }
   return (
     <section className="h-1/4 flex flex-col gap-2">
       <div className="flex gap-4">
@@ -15,7 +18,7 @@ export default function Section2() {
         </div>
       </div>
       <div className="flex gap-4 h-full">
-        <div className="w-1/2 h-full bg-tertiaryBg rounded p-2 px-8 flex flex-col justify-center gap-2">
+        <div className="w-1/2 h-full rounded p-4 px-8 flex flex-col justify-center gap-2" style={{backgroundColor:"#202128"}}>
           <div className="flex w-full justify-between items-center">
             <div className="flex gap-4 items-center">
               <div className="relative flex items-center w-12 h-12 justify-center">
@@ -56,7 +59,7 @@ export default function Section2() {
             <button className="p-2 border rounded">Take action</button>
           </div>
         </div>
-        <div className="w-1/2 h-full bg-tertiaryBg rounded flex p-3 px-8 items-center gap-5">
+        <div className="w-1/2 flex-grow rounded flex p-4 px-8 items-center gap-5" style={{backgroundColor:"#202128"}}>
           <div className="w-full">
             <h2>
               Critical assets compromised by attack vectors with the lowest
@@ -120,7 +123,12 @@ export default function Section2() {
             </table>
           </div>
           <div className="flex items-center justify-center">
-            <div className="w-32 h-32 border-[5px] rounded-full"></div>
+            <div className="w-32 h-32  rounded-full" style={grad}>
+              <div className="w-28 h-28 rounded-full absolute m-2" style={{backgroundColor:"#202128"}} >
+              <div className="text-center mt-6"><span className="text-xl">498</span> <br/>
+              <span className="text-xs text-grey">Critical assests at risk</span></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

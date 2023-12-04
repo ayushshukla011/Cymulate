@@ -1,10 +1,14 @@
+import { useState } from "react";
 import { BsHexagonFill } from "react-icons/bs";
 import { FaArrowTrendDown } from "react-icons/fa6";
 import { IoSettingsOutline } from "react-icons/io5";
+import graph from "./graph.png";
+
 export default function Section1() {
+  const [isActive, setIsActive] = useState(0);
   return (
-    <section className="w-full bg-tertiaryBg h-1/3 flex gap-4 rounded p-4">
-      <div className="h-full bg-secondaryBg flex flex-col items-center justify-between gap-1 rounded p-3">
+    <section className="w-full h-1/3 flex gap-4 rounded p-4" style={{backgroundColor:"#202128"}}>
+      <div className="h-full flex flex-col items-center justify-between gap-1 rounded p-3" style={{backgroundColor:"#2b2b36"}}>
         <h1 className="w-full text-lg flex justify-center gap-2">
           Security Score
           <span className="text-xs px-[0.3rem] h-fit rounded-full border">
@@ -40,6 +44,25 @@ export default function Section1() {
         <div className="flex items-center gap-4">
           <IoSettingsOutline className="w-5 h-5" />
           <p>Select Scenarios</p>
+        </div>
+      </div>
+      <div className="flex-grow h-full flex-col">
+        <div className="flex gap-1 text-sm">
+          <button onClick={()=>setIsActive(0)} className={`p-2 px-4 border-b-2 ${isActive===0?"border-purleBg": "border-transparent"}`}>
+            1 Week
+          </button>
+          <button onClick={()=>setIsActive(1)} className={`p-2 px-4 border-b-2 ${isActive===1?"border-purleBg": "border-transparent"}`}>
+            1 Months
+          </button>
+          <button onClick={()=>setIsActive(2)} className={`p-2 px-4 border-b-2 ${isActive==2?"border-purleBg": "border-transparent"}`}>
+            3 Months
+          </button>
+          <button onClick={()=>setIsActive(3)} className={`p-2 px-4 border-b-2 ${isActive===3?"border-purleBg": "border-transparent"}`}>
+            6 Months
+          </button>
+        </div>
+        <div>
+          <img src={graph} alt="Image" />
         </div>
       </div>
     </section>
