@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import "./nav.css";
 import logo from "../assets/logo.png";
-import Body from '../Body';
 import { FaCloudArrowDown } from "react-icons/fa6";
 import { FaDownload,FaRegBell,FaCaretRight } from "react-icons/fa";
 import { RiArrowDropDownLine } from "react-icons/ri";
@@ -40,7 +39,7 @@ const Home = () => {
         </ul>
       </nav>
       <div>
-        {/* Other content */}
+      
       </div>
     </div>
   );
