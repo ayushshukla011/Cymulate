@@ -1,6 +1,6 @@
 import React from 'react';
 import data from '../../data/data';
-import '../components/Sidebox.css'; // Import CSS file for styling
+import './Sidebox.css'; 
 import { MdDataExploration } from "react-icons/md";
 
 const Sidebox = () => {

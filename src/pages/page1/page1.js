@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './Body.css';
+import './page1.css';
 import Sidebox from '../../components/Page1components/Sidebox';
 import Sidebar from '../../components/Page1components/Sidebar';
 import {FaRegBell} from "react-icons/fa";
