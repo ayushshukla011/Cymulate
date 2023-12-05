@@ -2,10 +2,10 @@ import { PiBandaidsFill } from "react-icons/pi";
 
 export default function SmallSection({ affected, critical }) {
   return (
-    <div className="w-1/3 h-full bg-tertiaryBg rounded p-4 flex flex-col gap-2">
+    <div className="w-full h-full rounded p-4 flex flex-col gap-2" style={{backgroundColor:"#202128"}}>
       <h2>Local Credentials</h2>
       <div className="flex flex-col">
-        <p className="flex items-center text-sm gap-2">
+        <p className="flex items-center justify-between text-sm gap-2">
           <span className="w-1/3">Complexity:</span>
           <div className="flex gap-1 ml-6">
             <div className="p-1 py-[0.4rem] rounded-sm bg-redBg"></div>
@@ -14,7 +14,7 @@ export default function SmallSection({ affected, critical }) {
           </div>
           <span className="text-redBg">Low</span>
         </p>
-        <p className="flex items-center text-sm gap-2">
+        <p className="flex items-center justify-between text-sm gap-2">
           <span className="w-1/3">Severity:</span>
           <div className="flex gap-1">
             <div
